@@ -4,49 +4,112 @@ $(document).ready(function () {
 	var som =0;
 	var sym ;
 	var s=[] ;
-	setInterval(function(){
+	var a=0;
 
-		$(".all").text(s.join(''))
 
-	},500);
+
+
+
+
+
 	$("#1").click(function (){
+		if(a==1){
+			screen=[];
+			a=0;
+			s=[];
+			$(".all").text(s.join(''));
+		}
 		screen.push(1);
 
 		$(".text").text(screen.join(''));
 	});
 	$("#2").click(function (){
+		if(a==1){
+			screen=[];
+			a=0;
+			s=[];
+			$(".all").text(s.join(''));
+		}
 		screen.push(2);
 		$(".text").text(screen.join(''));
 	});
 	$("#3").click(function (){
+		if(a==1){
+			screen=[];
+			a=0;
+			s=[];
+			$(".all").text(s.join(''));
+		}
 		screen.push(3);
 		$(".text").text(screen.join(''));
 	});
 	$("#4").click(function (){
+		if(a==1){
+			screen=[];
+			a=0;
+			s=[];
+			$(".all").text(s.join(''));
+		}
 		screen.push(4);
 		$(".text").text(screen.join(''));
 	});
 	$("#5").click(function (){
+		if(a==1){
+			screen=[];
+			a=0;
+			s=[];
+			$(".all").text(s.join(''));
+		}
 		screen.push(5);
 		$(".text").text(screen.join(''));
 	});
 	$("#6").click(function (){
+		if(a==1){
+			screen=[];
+			a=0;
+			s=[];
+			$(".all").text(s.join(''));
+		}
 		screen.push(6);
 		$(".text").text(screen.join(''));
 	});
 	$("#7").click(function (){
+		if(a==1){
+			screen=[];
+			a=0;
+			s=[];
+			$(".all").text(s.join(''));
+		}
 		screen.push(7);
 		$(".text").text(screen.join(''));
 	});
 	$("#8").click(function (){
+		if(a==1){
+			screen=[];
+			a=0;
+			s=[];
+			$(".all").text(s.join(''));
+		}
 		screen.push(8);
 		$(".text").text(screen.join(''));
 	});
 	$("#9").click(function (){
+		if(a==1){
+			screen=[];
+			a=0;
+			s=[];
+			$(".all").text(s.join(''));
+		}
 		screen.push(9);
 		$(".text").text(screen.join(''));
 	});
 	$("#0").click(function (){
+		if(a==1){
+			screen=[];
+			a=0;
+			s=[];
+			$(".all").text(s.join(''));
+		}
 		screen.push(0);
 		$(".text").text(screen.join(''));
 	});
@@ -70,6 +133,7 @@ $(document).ready(function () {
 		s=[];
 		res=0;
 		som=0;
+		$(".all").text(s.join(''));
 		$(".text").text(screen.join(''));
 	});
 
@@ -80,12 +144,15 @@ $(document).ready(function () {
 
 	$("#plus").click(function (){
 		res+=parseFloat(screen.join(''));
+		if(a!=1){
 		s.push(screen.join(''));
+		}
 		screen =[];
 		sym="+";
 		s.push(sym);
 		$(".text").text(screen.join(''));
-
+		$(".all").text(s.join(''));
+		a=0;
 
 	});
 
@@ -96,12 +163,15 @@ $(document).ready(function () {
 		}else{
 		res-=parseFloat(screen.join(''));
 		}
+		if(a!=1){
 		s.push(screen.join(''));
+		}
 		screen =[];
 		sym="-";
 		s.push(sym);
 		$(".text").text(screen.join(''));
-
+		$(".all").text(s.join(''));
+		a=0;
 	});
 
 	$("#egal").click(function (){
@@ -115,11 +185,16 @@ $(document).ready(function () {
 		    case "/": som = res / parseFloat(screen.join(''));
 				break;
 		}
-
+		if(a!=1){
+		s.push(screen.join(''));
+		}
 		screen=[];
 		screen.push(som);
 		res=0;
 		$(".text").text(screen.join(''));
+		$(".all").text(s.join(''));
+		//s=[];
+		a=1;
 	});
 
 	$("#fois").click(function (){
@@ -128,11 +203,15 @@ $(document).ready(function () {
 		}else{
 		res*=parseFloat(screen.join(''));
 		}
+		if(a!=1){
 		s.push(screen.join(''));
+		}
 		screen =[];
 		sym="*";
 		s.push(sym);
 		$(".text").text(screen.join(''));
+		$(".all").text(s.join(''));
+		a=0;
 	});
 
 	$("#div").click(function (){
@@ -141,17 +220,23 @@ $(document).ready(function () {
 		}else{
 		res/=parseFloat(screen.join(''));
 		}
+		if(a!=1){
 		s.push(screen.join(''));
+		}
 		screen =[];
 		sym="/";
 		s.push(sym);
 		$(".text").text(screen.join(''));
+		$(".all").text(s.join(''));
+		a=0;
 	});
 	/*
-	$("#2").click(function (){
+	$("#pr").click(function (){
+		var = parseFloat(screen.join(''))
 		screen.push(2);
 		$(".text").text(screen.join(''));
 	});
+
 	$("#2").click(function (){
 		screen.push(2);
 		$(".text").text(screen.join(''));
