@@ -84,8 +84,10 @@ body{
 	//float:left;
 	width: 400px;
 	height: 80px;
-	padding-top:10px;
+	padding-top:2px;
 	padding-right:10px;
-	font-size: 55px;
+	font-size: 60px;
 	overflow:hidden;
+	color: #34495e;
+	font-family: "lato";
 }
