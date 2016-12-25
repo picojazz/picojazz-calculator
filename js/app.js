@@ -230,18 +230,7 @@ $(document).ready(function () {
 		$(".all").text(s.join(''));
 		a=0;
 	});
-	/*
-	$("#pr").click(function (){
-		var = parseFloat(screen.join(''))
-		screen.push(2);
-		$(".text").text(screen.join(''));
-	});
 
-	$("#2").click(function (){
-		screen.push(2);
-		$(".text").text(screen.join(''));
-	});
-	*/
 
 
 

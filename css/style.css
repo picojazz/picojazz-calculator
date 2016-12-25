@@ -1,6 +1,6 @@
 body{
-	background-color: #7f8c8d !important;
-
+	//background-color: #7f8c8d !important;
+	background-image: url(http://bgfons.com/upload/ornaments_texture1141.jpg);
 }.titre{
     //padding-bottom: 5px;
     margin-top: 20px;
@@ -20,7 +20,7 @@ body{
 	 margin: 0 auto;
      width: 400px;
 	height: 467.5px;
-	box-shadow: 0px 20px 50px 0px #34495e;
+	box-shadow: 0px 50px 90px black;
 	border-radius: 10px 10px 0px 0px;
 }.screen{
 	position: relative;
@@ -31,20 +31,20 @@ body{
 }.touch{
 	position: relative;
 
-	//border: 1px solid black;
+
 	width: 400px;
 	height:270px;
 }
 .block{
 	position: relative;
-	//border: 1px solid black;
+
 	width: 300px;
 	height: 67.5px;
 	display: flex;
 }.block-right{
 	position: relative;
 	float: right;
-	//border: 1px solid black;
+
 	width: 100px;
 	height: 337.5px;
 	top: -337.5px;
@@ -53,6 +53,15 @@ body{
 	border: 1px dotted #34495e;
 
 	width: 100px;
+	height: 67.5px;
+	cursor:pointer;
+
+}
+.inner-block1{
+	position: relative;
+	border: 1px dotted #34495e;
+
+	width: 200px;
 	height: 67.5px;
 	cursor:pointer;
 
