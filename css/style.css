@@ -1,6 +1,7 @@
 body{
 	//background-color: #7f8c8d !important;
 	background-image: url(http://bgfons.com/upload/ornaments_texture1141.jpg);
+	overflow: hidden;
 }.titre{
     //padding-bottom: 5px;
     margin-top: 20px;
